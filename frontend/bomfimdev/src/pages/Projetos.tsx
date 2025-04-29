@@ -10,11 +10,13 @@ interface Projeto {
   imagem?: string;
 }
 
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+
 const Projetos: React.FC = () => {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/projetos')
+    axios.get(`${BASE_URL}/api/projetos`)
       .then(response => {
         console.log('Projetos recebidos:', response.data);
         setProjetos(response.data);
@@ -31,6 +33,7 @@ const Projetos: React.FC = () => {
           projetos.map(projeto => (
             <CartaoProjeto
               key={projeto.id}
+              id={projeto.id}
               titulo={projeto.titulo}
               descricao={projeto.descricao}
               tecnologia={projeto.tecnologia}

@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 interface ProjetoProps {
+  id?: number;
   titulo?: string;
   descricao?: string;
   tecnologia?: string;
@@ -8,13 +11,19 @@ interface ProjetoProps {
 }
 
 const CartaoProjeto: React.FC<ProjetoProps> = ({ 
+  id,
   titulo = 'Projeto Exemplo', 
   descricao = 'Descrição do projeto, construído com tecnologias modernas.',
   tecnologia = 'Desconhecida',
   imagem = 'https://picsum.photos/300/200?random=0'
 }) => {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col"
+    >
       <div className="w-full h-40">
         <img 
           src={imagem} 
@@ -30,12 +39,17 @@ const CartaoProjeto: React.FC<ProjetoProps> = ({
           <p className="text-sm text-blue-400 mb-4">Tecnologia: {tecnologia}</p>
         </div>
         <div className="flex justify-center">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 text-sm">
-            Ver Detalhes
-          </button>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              to={`/projetos/${id}`}
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 text-sm"
+            >
+              Ver Detalhes
+            </Link>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

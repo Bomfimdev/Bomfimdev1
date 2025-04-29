@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+
 const FormularioContato: React.FC = () => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
@@ -10,7 +12,7 @@ const FormularioContato: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/api/contato', {
+      await axios.post(`${BASE_URL}/api/contato`, {
         nome,
         email,
         mensagem,

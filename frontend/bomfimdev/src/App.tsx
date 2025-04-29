@@ -4,6 +4,7 @@ import Rodape from './components/Rodape';
 import PaginaInicial from './pages/PaginaInicial';
 import Sobre from './pages/Sobre';
 import Projetos from './pages/Projetos';
+import DetalhesProjeto from './pages/DetalhesProjeto';
 import Contato from './pages/Contato';
 import './styles/global.css';
 
@@ -17,6 +18,7 @@ function App() {
             <Rota path="/" element={<PaginaInicial />} />
             <Rota path="/sobre" element={<Sobre />} />
             <Rota path="/projetos" element={<Projetos />} />
+            <Rota path="/projetos/:id" element={<DetalhesProjeto />} />
             <Rota path="/contato" element={<Contato />} />
           </Rotas>
         </main>
