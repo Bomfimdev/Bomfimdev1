@@ -1,0 +1,19 @@
+body {
+  @apply bg-gradient-to-b from-gray-900 via-blue-900 to-purple-900 text-gray-100;
+}
+a, button {
+  @apply text-blue-400 hover:text-blue-300 transition;
+}
+html, body, #root {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
