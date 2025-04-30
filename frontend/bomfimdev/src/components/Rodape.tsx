@@ -9,29 +9,29 @@ const Rodape: React.FC = () => {
         {/* Ícones de Redes Sociais */}
         <div className="flex justify-center space-x-6 mb-6">
           <a href="https://www.linkedin.com/in/gabriel-bomfim-oliveira/" target="_blank" rel="noopener noreferrer">
-            {FaLinkedin({ className: "text-blue-300 hover:text-blue-200 text-3xl" })}
+            {FaLinkedin({ className: "text-[#005DC4] hover:text-[#3381D9] text-3xl" })}
           </a>
           <a href="https://github.com/Bomfimdev" target="_blank" rel="noopener noreferrer">
-            {FaGithub({ className: "text-blue-300 hover:text-blue-200 text-3xl" })}
+            {FaGithub({ className: "text-[#005DC4] hover:text-[#3381D9] text-3xl" })}
           </a>
         </div>
         {/* Links de Navegação */}
         <div className="flex justify-center space-x-6 mb-4">
-          <Link to="/" className="text-blue-400 hover:text-blue-300 text-sm">
+          <Link to="/" className="text-[#005DC4] hover:text-[#3381D9] text-sm">
             Home
           </Link>
-          <Link to="/projetos" className="text-blue-400 hover:text-blue-300 text-sm">
+          <Link to="/projetos" className="text-[#005DC4] hover:text-[#3381D9] text-sm">
             Portfolio
           </Link>
-          <Link to="/sobre" className="text-blue-400 hover:text-blue-300 text-sm">
+          <Link to="/sobre" className="text-[#005DC4] hover:text-[#3381D9] text-sm">
             Sobre
           </Link>
-          <Link to="/contato" className="text-blue-400 hover:text-blue-300 text-sm">
+          <Link to="/contato" className="text-[#005DC4] hover:text-[#3381D9] text-sm">
             Contato
           </Link>
         </div>
         {/* Copyright */}
-        <p className="text-gray-300 text-sm">© 2025 Bomfimdev. Todos os direitos reservados.</p>
+        <p className="text-[#B0BEC5] text-sm">© 2025 Bomfimdev. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

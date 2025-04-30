@@ -25,9 +25,9 @@ const Projetos: React.FC = () => {
   }, []);
 
   return (
-    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 py-20">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-white">Meus Projetos</h2>
-      <p className="text-center text-sm text-blue-400 mb-8">Confira alguns dos projetos que desenvolvi</p>
+    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-36 pb-20">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F5F5F5]">Meus Projetos</h2>
+      <p className="text-center text-sm text-[#005DC4] mb-8">Confira alguns dos projetos que desenvolvi</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projetos.length > 0 ? (
           projetos.map(projeto => (
@@ -41,7 +41,7 @@ const Projetos: React.FC = () => {
             />
           ))
         ) : (
-          <p className="text-base sm:text-lg text-center text-gray-300">Nenhum projeto encontrado.</p>
+          <p className="text-base sm:text-lg text-center text-[#B0BEC5]">Nenhum projeto encontrado.</p>
         )}
       </div>
     </section>

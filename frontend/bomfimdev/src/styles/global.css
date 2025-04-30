@@ -1,8 +1,8 @@
 body {
-  @apply bg-gradient-to-b from-gray-900 via-blue-900 to-purple-900 text-gray-100;
+  @apply bg-[#0A0F1B] text-[#F5F5F5];
 }
 a, button {
-  @apply text-blue-400 hover:text-blue-300 transition;
+  @apply text-[#005DC4] hover:text-[#3381D9] transition;
 }
 html, body, #root {
   height: 100%;

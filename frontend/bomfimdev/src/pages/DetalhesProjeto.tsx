@@ -26,13 +26,13 @@ const DetalhesProjeto: React.FC = () => {
   }, [id]);
 
   if (!projeto) {
-    return <div className="text-center text-white p-20">Carregando...</div>;
+    return <div className="text-center text-[#F5F5F5] p-20">Carregando...</div>;
   }
 
   return (
-    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 py-20">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-white">{projeto.titulo}</h2>
-      <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-36 pb-20">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-[#F5F5F5]">{projeto.titulo}</h2>
+      <div className="bg-[#1C2526] p-6 rounded-lg shadow-lg">
         {projeto.imagem && (
           <img
             src={projeto.imagem}
@@ -41,12 +41,12 @@ const DetalhesProjeto: React.FC = () => {
             loading="lazy"
           />
         )}
-        <p className="text-gray-300 text-sm mb-4">{projeto.descricao}</p>
-        <p className="text-blue-400 text-sm mb-6">Tecnologia: {projeto.tecnologia || 'Desconhecida'}</p>
+        <p className="text-[#B0BEC5] text-sm mb-4">{projeto.descricao}</p>
+        <p className="text-[#005DC4] text-sm mb-6">Tecnologia: {projeto.tecnologia || 'Desconhecida'}</p>
         <div className="text-center">
           <Link
             to="/projetos"
-            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-400 text-sm sm:text-base"
+            className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#3381D9] text-sm sm:text-base transition-all"
           >
             Voltar para Projetos
           </Link>
