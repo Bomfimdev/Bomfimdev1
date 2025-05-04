@@ -23,7 +23,7 @@ const CartaoProjeto: React.FC<ProjetoProps> = ({
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
       transition={{ duration: 0.5 }}
-      className="bg-[#1C2526] rounded-lg shadow-lg overflow-hidden flex flex-col"
+      className="bg-[#142A5A] rounded-lg shadow-lg overflow-hidden flex flex-col"
     >
       <div className="w-full h-40">
         <img 
@@ -44,7 +44,7 @@ const CartaoProjeto: React.FC<ProjetoProps> = ({
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               to={`/projetos/${id}`}
-              className="bg-[#005DC4] text-[#F5F5F5] px-4 py-2 rounded hover:bg-[#3381D9] text-sm transition-all"
+              className="bg-[#005DC4] text-[#F5F5F5] px-4 py-2 rounded hover:bg-[#0D3CD1] text-sm transition-all"
             >
               Ver Detalhes
             </Link>

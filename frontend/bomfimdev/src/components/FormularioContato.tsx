@@ -28,7 +28,7 @@ const FormularioContato: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto bg-[#1C2526] p-6 rounded-lg shadow-lg">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-lg mx-auto bg-[#142A5A] p-6 rounded-lg shadow-lg">
       <div>
         <label htmlFor="nome" className="block text-sm font-medium text-[#F5F5F5] mb-1">Nome</label>
         <input
@@ -62,7 +62,7 @@ const FormularioContato: React.FC = () => {
           required
         />
       </div>
-      <button type="submit" className="bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#3381D9] text-sm sm:text-base transition-all">
+      <button type="submit" className="bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all">
         Enviar Mensagem
       </button>
       {status && <p className="text-center text-sm text-[#B0BEC5] mt-4">{status}</p>}

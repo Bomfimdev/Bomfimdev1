@@ -42,14 +42,14 @@ const PaginaInicial: React.FC = () => {
           className="md:w-1/2 text-center md:text-left mb-8 md:mb-0"
         >
           <p className="text-sm text-[#005DC4] mb-2">Bem-vindo ao Bomfimdev</p>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight text-[#F5F5F5]">
             Olá, sou Gabriel Bomfim, Desenvolvedor Full Stack
           </h1>
           <p className="text-base sm:text-lg text-[#B0BEC5] mb-6">
             Desenvolvo soluções modernas e eficientes para web, com foco em performance e usabilidade.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link to="/sobre" className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#3381D9] text-sm sm:text-base transition-all">
+            <Link to="/sobre" className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all">
               Saiba Mais Sobre Mim
             </Link>
           </motion.div>
@@ -86,7 +86,7 @@ const PaginaInicial: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-[#1C2526] p-6 rounded-lg shadow-lg transition-all"
+            className="bg-[#142A5A] p-6 rounded-lg shadow-lg transition-all"
           >
             <h3 className="text-lg font-semibold text-[#005DC4] mb-2">Desenvolvimento Backend</h3>
             <p className="text-[#B0BEC5] text-sm">Java, Spring Boot, Node.js, APIs REST escaláveis.</p>
@@ -97,7 +97,7 @@ const PaginaInicial: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-[#1C2526] p-6 rounded-lg shadow-lg transition-all"
+            className="bg-[#142A5A] p-6 rounded-lg shadow-lg transition-all"
           >
             <h3 className="text-lg font-semibold text-[#005DC4] mb-2">Desenvolvimento Frontend</h3>
             <p className="text-[#B0BEC5] text-sm">React, TypeScript, Tailwind CSS, interfaces dinâmicas.</p>
@@ -108,7 +108,7 @@ const PaginaInicial: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-[#1C2526] p-6 rounded-lg shadow-lg transition-all"
+            className="bg-[#142A5A] p-6 rounded-lg shadow-lg transition-all"
           >
             <h3 className="text-lg font-semibold text-[#005DC4] mb-2">DevOps & CI/CD</h3>
             <p className="text-[#B0BEC5] text-sm">Docker, Jenkins, AWS, automação de pipelines.</p>
@@ -144,7 +144,7 @@ const PaginaInicial: React.FC = () => {
         </div>
         <div className="text-center mt-8">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link to="/projetos" className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#3381D9] text-sm sm:text-base transition-all">
+            <Link to="/projetos" className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all">
               Ver Todos os Projetos
             </Link>
           </motion.div>

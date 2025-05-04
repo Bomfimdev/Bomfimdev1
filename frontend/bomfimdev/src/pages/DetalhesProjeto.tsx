@@ -32,7 +32,7 @@ const DetalhesProjeto: React.FC = () => {
   return (
     <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-36 pb-20">
       <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-[#F5F5F5]">{projeto.titulo}</h2>
-      <div className="bg-[#1C2526] p-6 rounded-lg shadow-lg">
+      <div className="bg-[#142A5A] p-6 rounded-lg shadow-lg">
         {projeto.imagem && (
           <img
             src={projeto.imagem}
@@ -46,7 +46,7 @@ const DetalhesProjeto: React.FC = () => {
         <div className="text-center">
           <Link
             to="/projetos"
-            className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#3381D9] text-sm sm:text-base transition-all"
+            className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all"
           >
             Voltar para Projetos
           </Link>
