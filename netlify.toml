@@ -1,0 +1,7 @@
+[build]
+  base = "frontend/bomfimdev"
+  command = "npm run build"
+  publish = "frontend/bomfimdev/build"
+
+[build.environment]
+  REACT_APP_API_URL = "https://bomfimdev.onrender.com"
