@@ -5,11 +5,11 @@ const Sobre: React.FC = () => {
   const [abaAtiva, setAbaAtiva] = useState('habilidades');
 
   return (
-    <div className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-150 pb-20 relative z-0">
+    <div className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-72 pb-20 relative z-0">
       <section className="mb-16 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-white">Sobre Mim</h2>
-        <p className="text-center text-sm text-[#1E3A8A] mb-8">
-          Desenvolvedor Full Stack com 4 anos de experiência em Java, Spring Boot e React, busco contribuir com soluções escaláveis e inovadoras.
+        <p className="text-center text-sm text-[#E2E8F0] mb-8">
+          Desenvolvedor Full Stack desde 2021 com experiência em Java, JavaScript, Spring Boot, React, Angular e Quarkus, busco contribuir com soluções escaláveis e inovadoras.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <motion.div
@@ -56,7 +56,7 @@ const Sobre: React.FC = () => {
 
       <section className="text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-white">Minha Trajetória</h2>
-        <p className="text-sm text-[#1E3A8A] mb-8">Minha experiência, formação e certificações</p>
+        <p className="text-sm text-[#E2E8F0] mb-8">Minha experiência, formação e certificações</p>
         
         <div className="flex flex-col items-center space-y-4 mb-8">
           <div className="flex justify-center space-x-4 w-full max-w-md">
@@ -158,9 +158,9 @@ const Sobre: React.FC = () => {
               <h3 className="text-lg font-semibold text-[#F1F5F9] mb-2">Desenvolvedor Java - Conselho Nacional de Justiça (CNJ)</h3>
               <p className="text-[#CBD5E1] text-sm mb-2">Fev/2024 - Presente</p>
               <ul className="text-[#CBD5E1] text-sm list-disc list-inside">
-                <li>Otimizou o sistema PJe legado com Java e Spring Boot, reduzindo o tempo de resposta de APIs em 20%.</li>
-                <li>Integrou APIs no projeto Sinapses, automatizando 30% dos processos judiciais com modelos de IA.</li>
-                <li>Contribuições técnicas em sistemas do PDPJ com Java, JPA e SQL.</li>
+                <li>Otimizo o sistema PJe legado com Java e Spring Boot, reduzindo o tempo de resposta de APIs em 20%.</li>
+                <li>Integro APIs no projeto Sinapses, automatizando 30% dos processos judiciais com modelos de IA.</li>
+                <li>Faço contribuições técnicas em sistemas do PDPJ com Java, JPA e SQL.</li>
               </ul>
             </motion.div>
             <motion.div
@@ -174,8 +174,8 @@ const Sobre: React.FC = () => {
               <h3 className="text-lg font-semibold text-[#F1F5F9] mb-2">Desenvolvedor Full Stack - B2Assist Apoio Administrativo</h3>
               <p className="text-[#CBD5E1] text-sm mb-2">Jan/2021 - Fev/2024</p>
               <ul className="text-[#CBD5E1] text-sm list-disc list-inside">
-                <li>Integrou APIs REST com Node.js e Spring Boot em 3 sistemas web, melhorando a escalabilidade.</li>
-                <li>Desenvolveu 5 sistemas web com React e Spring Boot, economizando 15 horas semanais em processos manuais.</li>
+                <li>Integrei APIs REST com Node.js e Spring Boot em 3 sistemas web, melhorando a escalabilidade.</li>
+                <li>Desenvolvi 5 sistemas web com React e Spring Boot, economizando 15 horas semanais em processos manuais.</li>
               </ul>
             </motion.div>
           </div>

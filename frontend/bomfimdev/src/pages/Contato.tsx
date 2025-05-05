@@ -6,7 +6,7 @@ const Contato: React.FC = () => {
   return (
     <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-72 pb-20 relative z-0">
       <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-white">Entre em Contato</h2>
-      <p className="text-sm text-[#1E3A8A] mb-8 text-center">Entre em contato comigo para discutir seu projeto!</p>
+      <p className="text-sm text-[#E2E8F0] mb-8 text-center">Entre em contato comigo para discutir seu projeto!</p>
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/3 bg-[#1F2A44] p-6 rounded-lg shadow-lg text-left">
           <h3 className="text-lg font-semibold text-[#1E3A8A] mb-4">Informações de Contato</h3>

@@ -32,7 +32,8 @@ const DetalhesProjeto: React.FC = () => {
 
   return (
     <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-72 pb-20 relative z-0">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-white">{projeto.titulo}</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-white">{projeto.titulo}</h2>
+      <p className="text-center text-sm text-[#E2E8F0] mb-8">Detalhes do projeto selecionado</p>
       <div className="bg-[#1F2A44] p-6 rounded-lg shadow-lg">
         {projeto.imagem && (
           <img

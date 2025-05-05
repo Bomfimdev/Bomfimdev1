@@ -28,7 +28,7 @@ const Projetos: React.FC = () => {
   return (
     <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-72 pb-20 relative z-0">
       <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-white">Meus Projetos</h2>
-      <p className="text-center text-sm text-[#1E3A8A] mb-8">Confira alguns dos projetos que desenvolvi</p>
+      <p className="text-center text-sm text-[#E2E8F0] mb-8">Confira alguns dos projetos que desenvolvi</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projetos.length > 0 ? (
           projetos.map(projeto => (
