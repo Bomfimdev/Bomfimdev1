@@ -8,9 +8,10 @@ interface Projeto {
   descricao: string;
   tecnologia?: string;
   imagem?: string;
+  link?: string;
 }
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://bomfimdev.onrender.com';
 
 const Projetos: React.FC = () => {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
@@ -25,9 +26,9 @@ const Projetos: React.FC = () => {
   }, []);
 
   return (
-    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-36 pb-20">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F5F5F5]">Meus Projetos</h2>
-      <p className="text-center text-sm text-[#005DC4] mb-8">Confira alguns dos projetos que desenvolvi</p>
+    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-72 pb-20 relative z-0">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-white">Meus Projetos</h2>
+      <p className="text-center text-sm text-[#1E3A8A] mb-8">Confira alguns dos projetos que desenvolvi</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projetos.length > 0 ? (
           projetos.map(projeto => (
@@ -38,10 +39,11 @@ const Projetos: React.FC = () => {
               descricao={projeto.descricao}
               tecnologia={projeto.tecnologia}
               imagem={projeto.imagem}
+              link={projeto.link}
             />
           ))
         ) : (
-          <p className="text-base sm:text-lg text-center text-[#B0BEC5]">Nenhum projeto encontrado.</p>
+          <p className="text-base sm:text-lg text-center text-[#CBD5E1]">Nenhum projeto encontrado.</p>
         )}
       </div>
     </section>

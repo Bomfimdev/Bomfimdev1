@@ -1,8 +1,8 @@
 body {
-  @apply bg-[#0A0F1B] text-[#F5F5F5];
+  @apply bg-[#0F172A] text-[#F1F5F9];
 }
 a, button {
-  @apply text-[#005DC4] hover:text-[#3381D9] transition;
+  @apply text-[#1E3A8A] hover:text-[#3B82F6] transition;
 }
 html, body, #root {
   height: 100%;

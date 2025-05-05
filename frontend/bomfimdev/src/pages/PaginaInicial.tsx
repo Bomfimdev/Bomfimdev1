@@ -10,9 +10,10 @@ interface Projeto {
   descricao: string;
   tecnologia?: string;
   imagem?: string;
+  link?: string;
 }
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://bomfimdev.onrender.com';
 
 const PaginaInicial: React.FC = () => {
   const [projetos, setProjetos] = useState<Projeto[]>([]);
@@ -28,7 +29,6 @@ const PaginaInicial: React.FC = () => {
 
   return (
     <div className="w-full sm:w-[90%] mx-auto">
-      {/* Seção Hero */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -41,15 +41,15 @@ const PaginaInicial: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="md:w-1/2 text-center md:text-left mb-8 md:mb-0"
         >
-          <p className="text-sm text-[#005DC4] mb-2">Bem-vindo ao Bomfimdev</p>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight text-[#F5F5F5]">
+          <p className="text-sm text-[#1E3A8A] mb-2">Bem-vindo ao Bomfimdev</p>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight text-[#F1F5F9]">
             Olá, sou Gabriel Bomfim, Desenvolvedor Full Stack
           </h1>
-          <p className="text-base sm:text-lg text-[#B0BEC5] mb-6">
+          <p className="text-base sm:text-lg text-[#CBD5E1] mb-6">
             Desenvolvo soluções modernas e eficientes para web, com foco em performance e usabilidade.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link to="/sobre" className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all">
+            <Link to="/sobre" className="inline-block bg-[#1E3A8A] text-[#F1F5F9] px-6 py-3 rounded-full hover:bg-[#3B82F6] text-sm sm:text-base transition-all">
               Saiba Mais Sobre Mim
             </Link>
           </motion.div>
@@ -69,7 +69,6 @@ const PaginaInicial: React.FC = () => {
         </motion.div>
       </motion.section>
 
-      {/* Seção Habilidades */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -77,8 +76,8 @@ const PaginaInicial: React.FC = () => {
         viewport={{ once: true }}
         className="p-4 sm:p-6 pt-36 pb-20"
       >
-        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F5F5F5]">Minhas Habilidades</h2>
-        <p className="text-center text-sm text-[#005DC4] mb-8">Conheça minhas principais competências técnicas</p>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F1F5F9]">Minhas Habilidades</h2>
+        <p className="text-center text-sm text-[#1E3A8A] mb-8">Conheça minhas principais competências técnicas</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -86,10 +85,10 @@ const PaginaInicial: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-[#142A5A] p-6 rounded-lg shadow-lg transition-all"
+            className="bg-[#1F2A44] p-6 rounded-lg shadow-lg transition-all"
           >
-            <h3 className="text-lg font-semibold text-[#005DC4] mb-2">Desenvolvimento Backend</h3>
-            <p className="text-[#B0BEC5] text-sm">Java, Spring Boot, Node.js, APIs REST escaláveis.</p>
+            <h3 className="text-lg font-semibold text-[#1E3A8A] mb-2">Desenvolvimento Backend</h3>
+            <p className="text-[#CBD5E1] text-sm">Java, Spring Boot, Node.js, APIs REST escaláveis.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,10 +96,10 @@ const PaginaInicial: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-[#142A5A] p-6 rounded-lg shadow-lg transition-all"
+            className="bg-[#1F2A44] p-6 rounded-lg shadow-lg transition-all"
           >
-            <h3 className="text-lg font-semibold text-[#005DC4] mb-2">Desenvolvimento Frontend</h3>
-            <p className="text-[#B0BEC5] text-sm">React, TypeScript, Tailwind CSS, interfaces dinâmicas.</p>
+            <h3 className="text-lg font-semibold text-[#1E3A8A] mb-2">Desenvolvimento Frontend</h3>
+            <p className="text-[#CBD5E1] text-sm">React, TypeScript, Tailwind CSS, interfaces dinâmicas.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -108,15 +107,14 @@ const PaginaInicial: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)" }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-[#142A5A] p-6 rounded-lg shadow-lg transition-all"
+            className="bg-[#1F2A44] p-6 rounded-lg shadow-lg transition-all"
           >
-            <h3 className="text-lg font-semibold text-[#005DC4] mb-2">DevOps & CI/CD</h3>
-            <p className="text-[#B0BEC5] text-sm">Docker, Jenkins, AWS, automação de pipelines.</p>
+            <h3 className="text-lg font-semibold text-[#1E3A8A] mb-2">DevOps & CI/CD</h3>
+            <p className="text-[#CBD5E1] text-sm">Docker, Jenkins, AWS, automação de pipelines.</p>
           </motion.div>
         </div>
       </motion.section>
 
-      {/* Seção Projetos */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -124,8 +122,8 @@ const PaginaInicial: React.FC = () => {
         viewport={{ once: true }}
         className="p-4 sm:p-6 pt-36 pb-20"
       >
-        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F5F5F5]">Meus Projetos</h2>
-        <p className="text-center text-sm text-[#005DC4] mb-8">Confira alguns dos meus trabalhos recentes</p>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F1F5F9]">Meus Projetos</h2>
+        <p className="text-center text-sm text-[#1E3A8A] mb-8">Confira alguns dos meus trabalhos recentes</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projetos.length > 0 ? (
             projetos.map(projeto => (
@@ -136,15 +134,16 @@ const PaginaInicial: React.FC = () => {
                 descricao={projeto.descricao}
                 tecnologia={projeto.tecnologia}
                 imagem={projeto.imagem}
+                link={projeto.link}
               />
             ))
           ) : (
-            <p className="text-base sm:text-lg text-center text-[#B0BEC5]">Nenhum projeto encontrado.</p>
+            <p className="text-base sm:text-lg text-center text-[#CBD5E1]">Nenhum projeto encontrado.</p>
           )}
         </div>
         <div className="text-center mt-8">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link to="/projetos" className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all">
+            <Link to="/projetos" className="inline-block bg-[#1E3A8A] text-[#F1F5F9] px-6 py-3 rounded-full hover:bg-[#3B82F6] text-sm sm:text-base transition-all">
               Ver Todos os Projetos
             </Link>
           </motion.div>

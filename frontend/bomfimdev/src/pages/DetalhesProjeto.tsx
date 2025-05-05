@@ -8,9 +8,10 @@ interface Projeto {
   descricao: string;
   tecnologia?: string;
   imagem?: string;
+  link?: string;
 }
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://bomfimdev.onrender.com';
 
 const DetalhesProjeto: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -26,13 +27,13 @@ const DetalhesProjeto: React.FC = () => {
   }, [id]);
 
   if (!projeto) {
-    return <div className="text-center text-[#F5F5F5] p-20">Carregando...</div>;
+    return <div className="text-center text-[#F1F5F9] p-20">Carregando...</div>;
   }
 
   return (
-    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-36 pb-20">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-[#F5F5F5]">{projeto.titulo}</h2>
-      <div className="bg-[#142A5A] p-6 rounded-lg shadow-lg">
+    <section className="w-full sm:w-[90%] mx-auto p-4 sm:p-6 pt-72 pb-20 relative z-0">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-white">{projeto.titulo}</h2>
+      <div className="bg-[#1F2A44] p-6 rounded-lg shadow-lg">
         {projeto.imagem && (
           <img
             src={projeto.imagem}
@@ -41,12 +42,19 @@ const DetalhesProjeto: React.FC = () => {
             loading="lazy"
           />
         )}
-        <p className="text-[#B0BEC5] text-sm mb-4">{projeto.descricao}</p>
-        <p className="text-[#005DC4] text-sm mb-6">Tecnologia: {projeto.tecnologia || 'Desconhecida'}</p>
+        <p className="text-[#CBD5E1] text-sm mb-4">{projeto.descricao}</p>
+        <p className="text-[#1E3A8A] text-sm mb-4">Tecnologia: {projeto.tecnologia || 'Desconhecida'}</p>
+        {projeto.link && (
+          <p className="text-[#1E3A8A] text-sm mb-6">
+            <a href={projeto.link} target="_blank" rel="noopener noreferrer" className="hover:text-[#3B82F6]">
+              Ver Projeto
+            </a>
+          </p>
+        )}
         <div className="text-center">
           <Link
             to="/projetos"
-            className="inline-block bg-[#005DC4] text-[#F5F5F5] px-6 py-3 rounded-full hover:bg-[#0D3CD1] text-sm sm:text-base transition-all"
+            className="inline-block bg-[#1E3A8A] text-[#F1F5F9] px-6 py-3 rounded-full hover:bg-[#3B82F6] text-sm sm:text-base transition-all"
           >
             Voltar para Projetos
           </Link>
