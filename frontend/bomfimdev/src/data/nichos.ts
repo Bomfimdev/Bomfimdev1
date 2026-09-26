@@ -1,0 +1,403 @@
+export interface Nicho {
+  slug: string;
+  titulo: string;
+  profissao: string;
+  profissaoPlural: string;
+  emoji: string;
+  metaTitle: string;
+  metaDescription: string;
+  headline: string;
+  subtitulo: string;
+  problemas: string[];
+  beneficios: string[];
+  funcionalidades: string[];
+  cta: string;
+  keywords: string[];
+}
+
+export const nichos: Nicho[] = [
+  // SAÚDE
+  {
+    slug: 'site-para-medicos',
+    titulo: 'Sites para Médicos',
+    profissao: 'médico',
+    profissaoPlural: 'médicos',
+    emoji: '🩺',
+    metaTitle: 'Site para Médicos | Presença Digital Profissional | Bomfimdev',
+    metaDescription: 'Criação de site profissional para médicos. Design premium, agendamento online, SEO local e integração com WhatsApp. Orçamento gratuito.',
+    headline: 'Site profissional para médicos que querem mais pacientes.',
+    subtitulo: 'Design premium, agendamento online e presença no Google para você ser encontrado na sua cidade.',
+    problemas: [
+      'Pacientes buscam seu nome no Google e não encontram nada profissional.',
+      'Você depende só de indicação e planos de saúde para ter agenda cheia.',
+      'Concorrentes com site profissional estão captando seus pacientes.',
+    ],
+    beneficios: [
+      'Apareça no Google quando buscarem "médico + sua especialidade + sua cidade".',
+      'Transmita autoridade antes mesmo da primeira consulta.',
+      'Receba agendamentos direto pelo site, sem intermediários.',
+    ],
+    funcionalidades: [
+      'Página de especialidades e procedimentos',
+      'Integração com WhatsApp para agendamento',
+      'Área de convênios aceitos',
+      'Depoimentos de pacientes',
+      'Blog para SEO e autoridade',
+      'Responsivo e rápido no celular',
+    ],
+    cta: 'Quero um site para meu consultório',
+    keywords: ['site para médico', 'site para consultório médico', 'site para clínica', 'criação de site médico'],
+  },
+  {
+    slug: 'site-para-dentistas',
+    titulo: 'Sites para Dentistas',
+    profissao: 'dentista',
+    profissaoPlural: 'dentistas',
+    emoji: '🦷',
+    metaTitle: 'Site para Dentistas | Atraia Mais Pacientes | Bomfimdev',
+    metaDescription: 'Criação de site para dentistas e clínicas odontológicas. Design moderno, antes e depois, agendamento online. Orçamento gratuito.',
+    headline: 'Site que transforma visitantes em pacientes do seu consultório.',
+    subtitulo: 'Mostre seus tratamentos, resultados e diferenciais para quem busca um dentista na sua região.',
+    problemas: [
+      'Seu consultório não aparece quando buscam "dentista perto de mim".',
+      'Você não consegue mostrar seus casos de sucesso de forma profissional.',
+      'Pacientes vão para concorrentes que têm presença digital forte.',
+    ],
+    beneficios: [
+      'Galeria de antes e depois que convence novos pacientes.',
+      'SEO local para aparecer nas buscas da sua cidade.',
+      'Agendamento simplificado direto pelo WhatsApp.',
+    ],
+    funcionalidades: [
+      'Galeria de antes e depois',
+      'Página de tratamentos e procedimentos',
+      'Integração com WhatsApp',
+      'Área de convênios',
+      'Depoimentos de pacientes',
+      'Google Meu Negócio integrado',
+    ],
+    cta: 'Quero um site para minha clínica',
+    keywords: ['site para dentista', 'site para clínica odontológica', 'site odontologia', 'criação de site dentista'],
+  },
+  {
+    slug: 'site-para-psicologos',
+    titulo: 'Sites para Psicólogos',
+    profissao: 'psicólogo',
+    profissaoPlural: 'psicólogos',
+    emoji: '🧠',
+    metaTitle: 'Site para Psicólogos | Consultório Online | Bomfimdev',
+    metaDescription: 'Criação de site para psicólogos. Design acolhedor, agendamento online, atendimento presencial e online. Orçamento gratuito.',
+    headline: 'Site que transmite acolhimento e profissionalismo.',
+    subtitulo: 'Presença digital que reflete sua abordagem e facilita o primeiro contato do paciente.',
+    problemas: [
+      'Pacientes não encontram informações sobre sua abordagem e especialidades.',
+      'Você perde tempo respondendo as mesmas dúvidas por WhatsApp.',
+      'Não tem um canal profissional para atendimento online.',
+    ],
+    beneficios: [
+      'Explique suas especialidades e abordagem de forma clara.',
+      'Ofereça atendimento online com agendamento integrado.',
+      'Transmita confiança antes do primeiro contato.',
+    ],
+    funcionalidades: [
+      'Página sobre abordagens e especialidades',
+      'Atendimento online e presencial',
+      'Agendamento pelo site',
+      'Blog com conteúdo de saúde mental',
+      'FAQ com dúvidas frequentes',
+      'Design acolhedor e profissional',
+    ],
+    cta: 'Quero um site para meu consultório',
+    keywords: ['site para psicólogo', 'site psicologia', 'site consultório psicologia', 'criação de site psicólogo'],
+  },
+  {
+    slug: 'site-para-fisioterapeutas',
+    titulo: 'Sites para Fisioterapeutas',
+    profissao: 'fisioterapeuta',
+    profissaoPlural: 'fisioterapeutas',
+    emoji: '💪',
+    metaTitle: 'Site para Fisioterapeutas | Atraia Pacientes | Bomfimdev',
+    metaDescription: 'Criação de site para fisioterapeutas e clínicas de fisioterapia. Mostre seus tratamentos e resultados. Orçamento gratuito.',
+    headline: 'Site que mostra sua expertise e atrai pacientes.',
+    subtitulo: 'Apresente seus tratamentos, especializações e resultados de forma profissional.',
+    problemas: [
+      'Pacientes não conhecem todos os tratamentos que você oferece.',
+      'Você não consegue mostrar sua especialização de forma profissional.',
+      'Depende apenas de indicações médicas para novos pacientes.',
+    ],
+    beneficios: [
+      'Mostre todos os seus tratamentos e especializações.',
+      'Apareça nas buscas de fisioterapia da sua região.',
+      'Receba contatos de pacientes interessados nos seus serviços.',
+    ],
+    funcionalidades: [
+      'Catálogo de tratamentos',
+      'Página de especializações',
+      'Depoimentos de pacientes',
+      'Integração com WhatsApp',
+      'Blog com exercícios e dicas',
+      'Localização e horários',
+    ],
+    cta: 'Quero um site para minha clínica',
+    keywords: ['site para fisioterapeuta', 'site fisioterapia', 'site clínica fisioterapia'],
+  },
+  {
+    slug: 'site-para-nutricionistas',
+    titulo: 'Sites para Nutricionistas',
+    profissao: 'nutricionista',
+    profissaoPlural: 'nutricionistas',
+    emoji: '🥗',
+    metaTitle: 'Site para Nutricionistas | Consultório Digital | Bomfimdev',
+    metaDescription: 'Criação de site para nutricionistas. Consultas online, blog de receitas, agendamento integrado. Orçamento gratuito.',
+    headline: 'Site que conecta você com pacientes que buscam qualidade de vida.',
+    subtitulo: 'Presença digital profissional para nutricionistas que querem expandir sua clientela.',
+    problemas: [
+      'Você não tem um canal profissional para divulgar seu trabalho.',
+      'Pacientes não encontram informações sobre seus programas e abordagens.',
+      'Perde oportunidades de consultas online por falta de estrutura.',
+    ],
+    beneficios: [
+      'Apresente seus programas e métodos de trabalho.',
+      'Ofereça consultas online com agendamento integrado.',
+      'Construa autoridade com blog de receitas e dicas.',
+    ],
+    funcionalidades: [
+      'Página de programas e serviços',
+      'Consultas online e presenciais',
+      'Blog de receitas e dicas',
+      'Depoimentos de pacientes',
+      'Agendamento online',
+      'E-books e materiais gratuitos',
+    ],
+    cta: 'Quero um site profissional',
+    keywords: ['site para nutricionista', 'site nutrição', 'site consultório nutricionista'],
+  },
+  {
+    slug: 'site-para-clinicas',
+    titulo: 'Sites para Clínicas',
+    profissao: 'clínica',
+    profissaoPlural: 'clínicas',
+    emoji: '🏥',
+    metaTitle: 'Site para Clínicas | Presença Digital Completa | Bomfimdev',
+    metaDescription: 'Criação de site para clínicas médicas e de saúde. Múltiplos profissionais, agendamento, SEO local. Orçamento gratuito.',
+    headline: 'Site completo para clínicas que querem crescer.',
+    subtitulo: 'Apresente toda sua equipe, especialidades e diferenciais em um só lugar.',
+    problemas: [
+      'Pacientes não conhecem todos os profissionais e serviços da clínica.',
+      'O agendamento é confuso e você perde pacientes no processo.',
+      'Sua clínica não aparece nas buscas locais do Google.',
+    ],
+    beneficios: [
+      'Página individual para cada profissional da equipe.',
+      'Sistema de agendamento organizado por especialidade.',
+      'SEO local para dominar as buscas na sua região.',
+    ],
+    funcionalidades: [
+      'Página da equipe com perfil de cada profissional',
+      'Catálogo de especialidades',
+      'Agendamento por especialidade',
+      'Convênios aceitos',
+      'Localização e estrutura',
+      'Blog institucional',
+    ],
+    cta: 'Quero um site para minha clínica',
+    keywords: ['site para clínica', 'site clínica médica', 'site clínica de saúde', 'criação de site clínica'],
+  },
+  // JURÍDICO
+  {
+    slug: 'site-para-advogados',
+    titulo: 'Sites para Advogados',
+    profissao: 'advogado',
+    profissaoPlural: 'advogados',
+    emoji: '⚖️',
+    metaTitle: 'Site para Advogados | Autoridade Digital | Bomfimdev',
+    metaDescription: 'Criação de site para advogados e escritórios de advocacia. Design de autoridade, áreas de atuação, captação de clientes. Orçamento gratuito.',
+    headline: 'Site que transmite autoridade e atrai clientes qualificados.',
+    subtitulo: 'Presença digital profissional para advogados que querem se destacar no mercado.',
+    problemas: [
+      'Clientes pesquisam seu nome e não encontram informações profissionais.',
+      'Você não consegue mostrar suas áreas de atuação de forma clara.',
+      'Depende apenas de indicação e networking para novos clientes.',
+    ],
+    beneficios: [
+      'Transmita autoridade e credibilidade antes do primeiro contato.',
+      'Apareça nas buscas por "advogado + sua área + sua cidade".',
+      'Receba contatos qualificados direto pelo site.',
+    ],
+    funcionalidades: [
+      'Áreas de atuação detalhadas',
+      'Perfil profissional completo',
+      'Blog jurídico para SEO',
+      'Formulário de consulta',
+      'Depoimentos de clientes',
+      'Integração com WhatsApp',
+    ],
+    cta: 'Quero um site para meu escritório',
+    keywords: ['site para advogado', 'site escritório advocacia', 'site advogado', 'criação de site advogado'],
+  },
+  // ENGENHARIA E ARQUITETURA
+  {
+    slug: 'site-para-engenheiros',
+    titulo: 'Sites para Engenheiros',
+    profissao: 'engenheiro',
+    profissaoPlural: 'engenheiros',
+    emoji: '🏗️',
+    metaTitle: 'Site para Engenheiros | Portfólio Profissional | Bomfimdev',
+    metaDescription: 'Criação de site para engenheiros civis, eletricistas, mecânicos. Portfólio de obras, serviços, captação de projetos. Orçamento gratuito.',
+    headline: 'Site que mostra seus projetos e atrai novos clientes.',
+    subtitulo: 'Portfólio digital profissional para engenheiros que querem expandir sua carteira de projetos.',
+    problemas: [
+      'Você não tem onde mostrar seus projetos de forma profissional.',
+      'Clientes não encontram informações sobre seus serviços.',
+      'Perde oportunidades por não ter presença digital.',
+    ],
+    beneficios: [
+      'Portfólio de projetos com fotos e descrições.',
+      'Apareça nas buscas por serviços de engenharia.',
+      'Receba solicitações de orçamento pelo site.',
+    ],
+    funcionalidades: [
+      'Portfólio de projetos realizados',
+      'Serviços oferecidos',
+      'Formulário de orçamento',
+      'Certificações e registros',
+      'Depoimentos de clientes',
+      'Blog técnico',
+    ],
+    cta: 'Quero um site profissional',
+    keywords: ['site para engenheiro', 'site engenharia civil', 'site engenheiro civil', 'portfólio engenheiro'],
+  },
+  {
+    slug: 'site-para-arquitetos',
+    titulo: 'Sites para Arquitetos',
+    profissao: 'arquiteto',
+    profissaoPlural: 'arquitetos',
+    emoji: '📐',
+    metaTitle: 'Site para Arquitetos | Portfólio Visual | Bomfimdev',
+    metaDescription: 'Criação de site para arquitetos. Portfólio visual impactante, projetos em destaque, captação de clientes. Orçamento gratuito.',
+    headline: 'Portfólio digital que valoriza seus projetos.',
+    subtitulo: 'Site visualmente impactante para arquitetos que querem atrair clientes através do trabalho.',
+    problemas: [
+      'Suas redes sociais não transmitem profissionalismo.',
+      'Você não tem um portfólio organizado e acessível.',
+      'Clientes em potencial não conseguem ver a amplitude do seu trabalho.',
+    ],
+    beneficios: [
+      'Portfólio visual que impressiona desde o primeiro clique.',
+      'Organize projetos por categoria e estilo.',
+      'Seja encontrado por clientes que buscam seu estilo.',
+    ],
+    funcionalidades: [
+      'Galeria de projetos em alta resolução',
+      'Filtros por tipo de projeto',
+      'Página de processo de trabalho',
+      'Formulário de briefing',
+      'Depoimentos de clientes',
+      'Integração com Instagram',
+    ],
+    cta: 'Quero um portfólio profissional',
+    keywords: ['site para arquiteto', 'portfólio arquitetura', 'site arquitetura', 'site escritório arquitetura'],
+  },
+  // OUTROS
+  {
+    slug: 'site-para-contadores',
+    titulo: 'Sites para Contadores',
+    profissao: 'contador',
+    profissaoPlural: 'contadores',
+    emoji: '📊',
+    metaTitle: 'Site para Contadores | Presença Digital | Bomfimdev',
+    metaDescription: 'Criação de site para contadores e escritórios de contabilidade. Serviços, captação de clientes, autoridade. Orçamento gratuito.',
+    headline: 'Site que transmite confiança e atrai empresas.',
+    subtitulo: 'Presença digital profissional para escritórios de contabilidade que querem crescer.',
+    problemas: [
+      'Empresas não encontram informações sobre seus serviços.',
+      'Você não consegue mostrar seus diferenciais.',
+      'Depende apenas de indicação para novos clientes.',
+    ],
+    beneficios: [
+      'Apresente todos os seus serviços de forma clara.',
+      'Apareça nas buscas por "contador + sua cidade".',
+      'Receba contatos de empresas interessadas.',
+    ],
+    funcionalidades: [
+      'Catálogo de serviços',
+      'Área para empresas e PF',
+      'Calculadoras e ferramentas',
+      'Blog com dicas fiscais',
+      'Formulário de contato',
+      'Área do cliente',
+    ],
+    cta: 'Quero um site para meu escritório',
+    keywords: ['site para contador', 'site contabilidade', 'site escritório contabilidade'],
+  },
+  {
+    slug: 'site-para-consultorio',
+    titulo: 'Sites para Consultórios',
+    profissao: 'consultório',
+    profissaoPlural: 'consultórios',
+    emoji: '🏢',
+    metaTitle: 'Site para Consultório | Atraia Mais Pacientes | Bomfimdev',
+    metaDescription: 'Criação de site para consultórios médicos, odontológicos e de saúde. Agendamento online, SEO local. Orçamento gratuito.',
+    headline: 'Site profissional que enche a agenda do seu consultório.',
+    subtitulo: 'Presença digital completa para consultórios que querem mais pacientes particulares.',
+    problemas: [
+      'Seu consultório depende demais de convênios.',
+      'Pacientes particulares não encontram você no Google.',
+      'Você não consegue mostrar seus diferenciais online.',
+    ],
+    beneficios: [
+      'Atraia mais pacientes particulares pelo Google.',
+      'Mostre seus diferenciais e estrutura.',
+      'Automatize o agendamento de consultas.',
+    ],
+    funcionalidades: [
+      'Página de serviços e especialidades',
+      'Agendamento online',
+      'Tour virtual da estrutura',
+      'Convênios aceitos',
+      'Localização e horários',
+      'Integração com WhatsApp',
+    ],
+    cta: 'Quero um site para meu consultório',
+    keywords: ['site para consultório', 'site consultório médico', 'criação de site consultório'],
+  },
+  {
+    slug: 'site-para-personal-trainer',
+    titulo: 'Sites para Personal Trainers',
+    profissao: 'personal trainer',
+    profissaoPlural: 'personal trainers',
+    emoji: '🏋️',
+    metaTitle: 'Site para Personal Trainer | Atraia Alunos | Bomfimdev',
+    metaDescription: 'Criação de site para personal trainers. Mostre resultados, metodologia e atraia novos alunos. Orçamento gratuito.',
+    headline: 'Site que mostra seus resultados e atrai alunos.',
+    subtitulo: 'Presença digital profissional para personal trainers que querem escalar o negócio.',
+    problemas: [
+      'Você depende apenas das redes sociais para atrair alunos.',
+      'Não tem um lugar profissional para mostrar transformações.',
+      'Perde tempo respondendo as mesmas dúvidas.',
+    ],
+    beneficios: [
+      'Galeria de transformações que convence novos alunos.',
+      'Apresente seus programas e metodologia.',
+      'Venda consultorias online para qualquer lugar.',
+    ],
+    funcionalidades: [
+      'Galeria de antes e depois',
+      'Programas e serviços',
+      'Depoimentos de alunos',
+      'Consultoria online',
+      'Blog de treinos e dicas',
+      'Integração com WhatsApp',
+    ],
+    cta: 'Quero um site profissional',
+    keywords: ['site para personal trainer', 'site personal', 'site treinador'],
+  },
+];
+
+export const getNichoBySlug = (slug: string): Nicho | undefined => {
+  return nichos.find((n) => n.slug === slug);
+};
+
+export const getAllNichoSlugs = (): string[] => {
+  return nichos.map((n) => n.slug);
+};

@@ -1,19 +1,74 @@
 body {
-  @apply bg-[#0F172A] text-[#F1F5F9];
+  @apply bg-dark-950 text-light-100 font-sans antialiased;
 }
-a, button {
-  @apply text-[#1E3A8A] hover:text-[#3B82F6] transition;
+
+html {
+  scroll-behavior: smooth;
 }
-html, body, #root {
-  height: 100%;
+
+html,
+body,
+#root {
+  min-height: 100%;
 }
-body {
-  display: flex;
-  flex-direction: column;
+
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
 }
-main {
-  flex: 1 0 auto;
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-footer {
-  flex-shrink: 0;
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24242f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2e2e3a;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-light via-accent to-emerald-light;
+}
+
+/* Glass effect */
+.glass {
+  @apply bg-dark-800/50 backdrop-blur-xl border border-dark-600/50;
+}
+
+/* Glow button */
+.btn-glow {
+  @apply relative overflow-hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-accent to-emerald opacity-0 transition-opacity duration-300;
+}
+
+.btn-glow:hover::before {
+  @apply opacity-100;
+}
+
+/* Line animation */
+.line-reveal {
+  @apply relative overflow-hidden;
+}
+
+.line-reveal::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent to-transparent scale-x-0 transition-transform duration-500 origin-left;
+}
+
+.line-reveal:hover::after {
+  @apply scale-x-100;
 }

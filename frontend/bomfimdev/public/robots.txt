@@ -1,3 +1,10 @@
-# https://www.robotstxt.org/robotstxt.html
+# Bomfimdev - Sites e Sistemas sob medida
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://bomfimdev.com/sitemap.xml
+
+# Bloquear pastas de desenvolvimento
+Disallow: /static/js/*.map
+Disallow: /static/css/*.map

@@ -1,0 +1,25 @@
+---
+description: Posicionamento e decisões do site Bomfimdev. Atualizar quando uma decisão de produto for tomada.
+alwaysApply: true
+---
+
+# Bomfimdev — memória do produto
+
+Site da Bomfimdev para **vender sites e sistemas sob medida**, não portfólio pessoal.
+
+## Decisões já tomadas
+
+- Oferta: sites institucionais, landing pages, sistemas web e e-commerce. Voz em primeira pessoa (Gabriel Bomfim).
+- SEO: uma landing por nicho em `src/data/nichos.ts`, rota `/:slug`, H1 e meta específicos da busca (ex.: “site para médicos”). Novo nicho entra em `nichos.ts` e em `public/sitemap.xml`.
+- Home aponta para os nichos. Páginas de nicho cruzam links entre si.
+- Visual: dark premium (`dark-950`), destaque índigo/verde, Inter + Playfair, motion com Framer Motion. Sem foto casual de perfil.
+- Contato real: `gbomfimprofissional@gmail.com`, (61) 99658-3471, WhatsApp `https://wa.me/5561996583471`, Brasília-DF.
+- Formulário só envia `nome`, `email`, `mensagem` para `POST /api/contato`. Empresa e serviço vão dentro de `mensagem`.
+- Stack do front: CRA + React + TypeScript + Tailwind em `frontend/bomfimdev`. API em `REACT_APP_API_URL` ou `https://bomfimdev.onrender.com`.
+- Deploy atual: Netlify (`netlify.toml`, base `frontend/bomfimdev`). Domínio alvo: `bomfimdev.com`.
+
+## Como decidir daqui para frente
+
+- Nova oferta, nicho, preço, prazo ou mudança visual: atualizar esta regra no mesmo passo.
+- Não voltar o site para portfólio, lista de vagas ou template genérico claro.
+- Não inventar case, depoimento, preço fechado ou prazo que não esteja nesta regra ou no código.
