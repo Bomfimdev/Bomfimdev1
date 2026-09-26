@@ -7,7 +7,7 @@ import './styles/global.css';
 
 function App() {
   return (
-    <Roteador>
+    <Roteador basename={process.env.PUBLIC_URL || undefined}>
       <div className="flex min-h-screen flex-col bg-dark-950">
         <Cabecalho />
         <main className="flex-grow">
